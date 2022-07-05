@@ -10,7 +10,7 @@
         --text-1: rgb(240, 240, 240);
         --text-2: rgb(0, 80, 200);
 
-        --text-gradient-0: linear-gradient(rgb(0,0,0),rgb(255,255,255));
+        --text-gradient-0: linear-gradient(45deg,rgb(0,80,200), rgb(30,30,200));
     }
 }
 
@@ -23,7 +23,7 @@
 nav {
     position: fixed;
     top: 0px;
-    height: 5vh;
+    height: 10vh;
     width: 100vw;
-    background-color: var(--text-gradient-0);
+    background: var(--text-gradient-0);
 }
