@@ -41,6 +41,26 @@ div.hero {
     width: 100vw;
 }
 
+div.hero * {
+    display: none;
+}
+
+div.hero img:first-of-type {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.hero h1.title:first-of-type {
+    display: block;
+    width: 80vw;
+    font-size: 10vh;
+    position: relative;
+    left: 5vw;
+    top: -20vh;
+}
+
 main {
     min-height: 50vh;
     width: 100vw;
