@@ -1,12 +1,29 @@
-nav {
-    position: fixed;
-    top: 0px;
-    height: 5vh;
-    width: 100vw;
+
+@media (prefers-color-scheme: dark) {
+    
+    * {
+        --background-0: rgb(63, 63, 63);
+        --background-1: rgb(100, 100, 100);
+        --background-2: rgb(200, 200, 200);
+
+        --text-0: rgb(200, 200, 200);
+        --text-1: rgb(240, 240, 240);
+        --text-2: rgb(0, 80, 200);
+
+        --text-gradient-0: linear-gradient(rgb(0,0,0),rgb(255,255,255));
+    }
 }
 
 * {
     padding: 0px;
     margin: 0px;
     border: none;
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    height: 5vh;
+    width: 100vw;
+    background-color: var(--text-gradient-0);
 }
