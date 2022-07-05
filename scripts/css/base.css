@@ -1,0 +1,12 @@
+nav {
+    position: fixed;
+    top: 0px;
+    height: 5vh;
+    width: 100vw;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
