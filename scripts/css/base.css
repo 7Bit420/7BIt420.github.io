@@ -52,7 +52,7 @@ div.hero img:first-of-type {
     object-fit: cover;
 }
 
-div.hero h1.title:first-of-type {
+div.hero h1.title {
     display: block;
     width: 80vw;
     font-size: 10vh;
