@@ -1,0 +1,15 @@
+@keyframes gradientBackground {
+
+    0% {
+        background-position: 0vw 100vw;
+    }
+
+    50% {
+        background-position: 50vw 100vw;
+    }
+
+    100% {
+        background-position: 100vw 100vw;
+    }
+
+}

@@ -1,3 +1,5 @@
+@import url('animmations.css');
+
 @media (prefers-color-scheme: dark) {
     
     * {
@@ -28,11 +30,13 @@
 }
 
 nav {
+    z-index: 100;
     position: fixed;
     top: 0px;
     height: 10vh;
     width: 100vw;
     background: var(--background-0);
+    border-bottom: 1px solid var(--text-0);
 }
 
 div.hero {
@@ -131,3 +135,22 @@ code>p::before {
 pre {
     display: block;
 }
+
+nav>a {
+    display: block;
+    height: 6vh;
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
+    font-size: 5vh;
+    text-decoration: none;
+    color: var(--text-1);
+    transition: all 1s ease;
+    width: fit-content;
+    background: transparent;
+    border-radius: 10px;
+}
+
+nav>a:hover {
+    background-image: linear-gradient(45deg, rgb(23, 26, 118) 0%, rgb(42, 81, 197) 100%);
+}
+
