@@ -1,0 +1,54 @@
+article>h1 {
+    font-size: 10vh;
+}
+
+article>h2 {
+    font-size: 9vh;
+}
+
+article>h3 {
+    font-size: 8vh;
+}
+
+article>h4 {
+    font-size: 7vh;
+}
+
+article>h5 {
+    font-size: 6vh;
+}
+
+article>h6 {
+    font-size: 4vh;
+}
+
+article>p {
+    font-size: 3vh;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+}
+
+code {
+    background: var(--background-4);
+    padding: 5px;
+    border-radius: 5px;
+    font-family: courier, monospace;
+    width: 80vw;
+    margin: 3vh 0px;
+    display: block;
+    counter-reset: ln;
+    overflow-x: scroll;
+}
+
+code>p {
+    display: block;
+    width: max-content;
+    padding-right: 1vw;
+}
+
+code>p::before {
+    counter-increment: ln;
+    width: 3vw;
+    content: counter(ln);
+    padding: 0px 1vw;
+}

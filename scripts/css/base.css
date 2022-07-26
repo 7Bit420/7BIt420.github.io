@@ -1,21 +1,5 @@
-@import url('animmations.css');
-
-@media (prefers-color-scheme: dark) {
-    
-    * {
-        --background-0: rgb(36, 36, 36);
-        --background-1: rgb(63, 63, 63);
-        --background-2: rgb(100, 100, 100);
-        --background-3: rgb(200, 200, 200);
-        --background-4: rgb(63, 63, 63, 0.5);
-
-        --text-0: rgb(200, 200, 200);
-        --text-1: rgb(240, 240, 240);
-        --text-2: rgb(24, 101, 216);
-
-        --text-gradient-0: linear-gradient(45deg,rgb(0,80,200), rgb(30,30,200));
-    }
-}
+@import url('colour-scheme.css');
+@import url('/scripts/css/text.css');
 
 * {
     padding: 0px;
@@ -29,128 +13,35 @@
     background: var(--background-1);
 }
 
-nav {
-    z-index: 100;
-    position: fixed;
-    top: 0px;
-    height: 10vh;
-    width: 100vw;
-    background: var(--background-0);
-    border-bottom: 1px solid var(--text-0);
-}
-
-div.hero {
-    margin-top: 10vh;
-    height: 40vh;
-    width: 100vw;
-}
-
-div.hero * {
+::-webkit-scrollbar {
     display: none;
 }
 
-div.hero img:first-of-type {
-    display: block;
+body>main {
+    height: 100vh;
     width: 100vw;
-    height: 100%;
-    object-fit: cover;
-}
-
-div.hero h1.title:first-of-type {
-    display: block;
-    width: 80vw;
-    font-size: 10vh;
-    position: relative;
-    left: 5vw;
-    top: -20vh;
-}
-
-main {
-    min-height: 50vh;
-    width: 100vw;
-    background: var(--background-0);
-}
-
-main article {
-    width: 80vw;
-    min-height: 10vh;
-    padding: 5vh 10vw;
-}
-
-article>h1 {
-    font-size: 10vh;
-}
-
-article>h2 {
-    font-size: 9vh;
-}
-
-article>h3 {
-    font-size: 8vh;
-}
-
-article>h4 {
-    font-size: 7vh;
-}
-
-article>h5 {
-    font-size: 6vh;
-}
-
-article>h6 {
-    font-size: 4vh;
-}
-
-article>p {
-    font-size: 3vh;
-    margin-bottom: 2vh;
-    margin-top: 1vh;
-}
-
-code {
-    background: var(--background-4);
-    padding: 5px;
-    border-radius: 5px;
-    font-family: courier, monospace;
-    width: 80vw;
-    margin: 3vh 0px;
-    display: block;
-    counter-reset: ln;
-    overflow-x: scroll;
-}
-
-code>p {
-    display: block;
-    width: max-content;
-    padding-right: 1vw;
-}
-
-code>p::before {
-    counter-increment: ln;
-    width: 3vw;
-    content: counter(ln);
-    padding: 0px 1vw;
-}
-
-pre {
     display: block;
 }
 
-nav>a {
-    display: block;
-    height: 6vh;
-    margin: 1vh 1vw;
+body>section {
     padding: 1vh 1vw;
-    font-size: 5vh;
-    text-decoration: none;
-    color: var(--text-1);
-    transition: all 1s ease;
-    width: fit-content;
-    background: transparent;
-    border-radius: 10px;
+    height: 98vh;
+    width: 98vw;
+    display: block;
 }
 
-nav>a:hover {
-    background-image: linear-gradient(45deg, rgb(23, 26, 118) 0%, rgb(42, 81, 197) 100%);
+body>section:nth-child(odd) {
+    background-color: var(--background-0);
 }
 
+body>section:nth-child(even) {
+    background-color: var(--background-1);
+}
+
+body>main, body>section {
+    scroll-snap-align: start;
+}
+
+body {
+    scroll-snap-type: y mandatory;
+}

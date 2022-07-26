@@ -1,0 +1,16 @@
+@media (prefers-color-scheme: dark) {
+    
+    * {
+        --background-0: rgb(36, 36, 36);
+        --background-1: rgb(63, 63, 63);
+        --background-2: rgb(100, 100, 100);
+        --background-3: rgb(200, 200, 200);
+        --background-4: rgb(63, 63, 63, 0.5);
+
+        --text-0: rgb(200, 200, 200);
+        --text-1: rgb(240, 240, 240);
+        --text-2: rgb(24, 101, 216);
+
+        --text-gradient-0: linear-gradient(45deg,rgb(0,80,200), rgb(30,30,200));
+    }
+}
