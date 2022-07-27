@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="scripts/css/index.css">
 
     <script src="/scripts/js/svg-loader.js"></script>
+    <script src="/scripts/js/phrasers/icalPhraser.js" type="module"></script>
+    <script src="scripts/js/calander.js"></script>
 </head>
 <body>
     <aside></aside>
@@ -23,7 +25,21 @@
                 <svg src="svgs/editor-window.svg" id="open-editor"></svg>
                 <svg src="svgs/add-event.svg" id="add-event"></svg>
             </nav>
-            <div></div>
+            <div class="events">
+                <h2>My Day</h2>
+                <div id="events">
+                    <div class="event">
+                        <h1 class="title">Some event for today</h1>
+                        <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti vel totam similique, velit culpa sit, maiores quam fugit ad quae amet fugiat corporis voluptates id laudantium modi minus deserunt possimus.</p>
+                        <p class="start">10:30:2020</p>
+                        <p class="end">10:30:2020</p>
+                    </div>
+                    <div class="event"></div>
+                    <div class="event"></div>
+                    <div class="event"></div>
+                    <div class="event"></div>
+                </div>
+            </div>
         </div>
     </main>
 </body>
