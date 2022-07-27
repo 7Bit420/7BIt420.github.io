@@ -6,6 +6,7 @@ export class ICalender {
     #freeBuzy = []
     #calander = {}
     #vertion = ''
+    #timezones = []
 
     static #phraseIcalToJSON(str = '') {
         var lines = str.split('\n')
@@ -58,7 +59,8 @@ export class ICalender {
 
         this.#vertion = this.#calander.VERSION
 
-        this.#events = this.#calander.VEVENT?.map(t => new VEvent(t)) ?? []
+        this.#timezones = this.#calander.VTIMEZONE?.map(t => new VTimeZone(t)) ?? []
+        this.#events = this.#calander.VEVENT?.map(t => new VEvent(t, this.#timezones)) ?? []
         this.#todos = this.#calander.VTODO?.map(t => new VTodo(t)) ?? []
         this.#jornals = this.#calander.VJOURNAL?.map(t => new VJournal(t)) ?? []
         this.#freeBuzy = this.#calander.VFREEBUSY?.map(t => new VFreeBusy(t)) ?? []
@@ -88,20 +90,24 @@ class VEvent {
         "SEQUENCE": "0"
     }
 
-    constructor(obj) {
+
+    constructor(obj, TZInfo) {
         Object.assign(this.#obj, obj)
-        this.#obj.DTEND = this.#obj.DTEND.map(t => Date.parse(Date(t.replace(/\w*(TZID=\w*\/\w*:)/, ''))))
-        this.#obj.DTSTART = this.#obj.DTSTART.map(t => {
-            var str = t.replace(/[\w\"]*TZID=[\w\"]*\/[\w\"]*:/, '')
-            return (Date.UTC(
-                Number(str.substring(0,4)),
-                Number(str.substring(4,6)),
-                Number(str.substring(6,8)),
-                Number(str.substring(9,11)),
-                Number(str.substring(11,13))
-            ))
-        })
-        console.log()
+        this.#obj.DTEND = this.#obj.DTEND.map(this.#stringToDate)
+        this.#obj.DTSTART = this.#obj.DTSTART.map(this.#stringToDate)
+    }
+
+    #stringToDate(t) {
+        var str = t.replace(/[\w\"]*TZID=[\w\"]*\/[\w\"]*:/, '')
+
+        return (Date.UTC(
+            Number(str.substring(0, 4)),
+            Number(str.substring(4, 6)),
+            Number(str.substring(6, 8)),
+            Number(str.substring(9, 11)),
+            Number(str.substring(11, 13))
+        ))
+
     }
 
     get created() { return this.#obj.CREATED }
@@ -134,6 +140,14 @@ class VFreeBusy {
 
     constructor(obj) {
 
+    }
+
+}
+
+class VTimeZone {
+
+    constructor(obj) {
+        
     }
 
 }
