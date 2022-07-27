@@ -1,5 +1,9 @@
 @import url('/scripts/css/base.css');
 
+body {
+    scroll-snap-type: none;
+}
+
 nav {
     z-index: 100;
     position: fixed;
