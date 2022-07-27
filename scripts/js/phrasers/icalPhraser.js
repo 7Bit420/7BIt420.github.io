@@ -60,7 +60,7 @@ export class ICalender {
         this.#vertion = this.#calander.VERSION
 
         this.#timezones = this.#calander.VTIMEZONE?.map(t => new VTimeZone(t)) ?? []
-        this.#events = this.#calander.VEVENT?.map(t => new VEvent(t, this.#timezones)) ?? []
+        this.#events = this.#calander.VEVENT?.map(t => new VEvent(t, this)) ?? []
         this.#todos = this.#calander.VTODO?.map(t => new VTodo(t)) ?? []
         this.#jornals = this.#calander.VJOURNAL?.map(t => new VJournal(t)) ?? []
         this.#freeBuzy = this.#calander.VFREEBUSY?.map(t => new VFreeBusy(t)) ?? []
@@ -70,12 +70,14 @@ export class ICalender {
     get VFreeBusys() { return this.#freeBuzy }
     get VTodos() { return this.#todos }
     get VEvents() { return this.#events }
+    get VTimeZones() { return this.#timezones }
 
     toJSON() { return this.#calander }
 }
 
 class VEvent {
 
+    calaender = ICalender.prototype
     #obj = {
         "CREATED": "20210720T032841Z",
         "UID": "000959BC-2376-41AA-822C-A856D0C63F4E",
@@ -91,14 +93,21 @@ class VEvent {
     }
 
 
-    constructor(obj, TZInfo) {
+    constructor(obj, calaender) {
+        this.calaender = calaender
         Object.assign(this.#obj, obj)
-        this.#obj.DTEND = this.#obj.DTEND.map(this.#stringToDate)
-        this.#obj.DTSTART = this.#obj.DTSTART.map(this.#stringToDate)
+        this.#obj.DTEND = this.#obj.DTEND.map(t => this.#stringToDate(t))
+        this.#obj.DTSTART = this.#obj.DTSTART.map(t => this.#stringToDate(t))
     }
 
     #stringToDate(t) {
         var str = t.replace(/[\w\"]*TZID=[\w\"]*\/[\w\"]*:/, '')
+        var tzid = t.match(/\"?\w*\/\w*\"?/)?.[0]
+
+        if (tzid.startsWith('\"')) { tzid = tzid.slice(1,-1) }
+        if (tzid.endsWith('\"')) { tzid = tzid.slice(0,-2) }
+
+        const timezone = this.calaender.VTimeZones.find(t => t.TZID == tzid)
 
         return (Date.UTC(
             Number(str.substring(0, 4)),
@@ -106,7 +115,7 @@ class VEvent {
             Number(str.substring(6, 8)),
             Number(str.substring(9, 11)),
             Number(str.substring(11, 13))
-        ))
+        ) + timezone.offset)
 
     }
 
@@ -146,10 +155,23 @@ class VFreeBusy {
 
 class VTimeZone {
 
+    #TZID = ''
+    #offset = 0
+
     constructor(obj) {
-        
+        this.#TZID = obj.TZID
+        this.#offset = Number(obj.STANDARD[0].TZOFFSETTO) * 1000
     }
 
+    get TZID() { return this.#TZID }
+    get offset() { return this.#offset }
 }
 
 export default ICalender
+
+if (globalThis.process) {
+    const fs = require('fs')
+    fs.writeFileSync(__dirname + '/out.json',JSON.stringify(
+        new ICalender(fs.readFileSync(__dirname + '/in.ics').toString('ascii')).toJSON()
+    ))
+}
