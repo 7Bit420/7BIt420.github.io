@@ -1,7 +1,7 @@
 @import url('/scripts/css/base.css');
 
 body {
-    scroll-snap-type: none;
+    scroll-snap-type: none !important;
 }
 
 nav {
