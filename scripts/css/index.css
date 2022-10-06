@@ -1,0 +1,76 @@
+@import url('/scripts/css/base.css');
+
+body {
+    scroll-snap-type: none !important;
+}
+
+nav {
+    z-index: 100;
+    position: fixed;
+    top: 0px;
+    height: 10vh;
+    width: 100vw;
+    background: var(--background-0);
+    border-bottom: 1px solid var(--text-0);
+}
+
+div.hero {
+    margin-top: 10vh;
+    height: 40vh;
+    width: 100vw;
+}
+
+div.hero * {
+    display: none;
+}
+
+div.hero img:first-of-type {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.hero h1.title:first-of-type {
+    display: block;
+    width: 80vw;
+    font-size: 10vh;
+    position: relative;
+    left: 5vw;
+    top: -20vh;
+}
+
+main {
+    min-height: 50vh;
+    width: 100vw;
+    background: var(--background-0);
+}
+
+main article {
+    width: 80vw;
+    min-height: 10vh;
+    padding: 5vh 10vw;
+}
+
+pre {
+    display: block;
+}
+
+nav>a {
+    display: block;
+    height: 6vh;
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
+    font-size: 5vh;
+    text-decoration: none;
+    color: var(--text-1);
+    transition: all 1s ease;
+    width: fit-content;
+    background: transparent;
+    border-radius: 10px;
+}
+
+nav>a:hover {
+    background-image: linear-gradient(45deg, rgb(23, 26, 118) 0%, rgb(42, 81, 197) 100%);
+}
+

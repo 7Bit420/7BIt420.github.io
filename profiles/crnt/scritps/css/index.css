@@ -1,0 +1,28 @@
+@import url("base.css");
+
+.content {
+    height: 70vh;
+}
+
+.ochen {
+    background: cyan;
+    height: 15vh;
+    width: 100vw;
+}
+
+.beach {
+    display: block;
+    width: 100vw;
+    height: 30vh;
+    background: rgb(193, 151, 11);
+}
+
+.sandbar {
+    width: 100vw;
+    height: 15vh;
+}
+
+.sandbar>svg {
+    width: 100vw;
+    object-fit: cover;
+}

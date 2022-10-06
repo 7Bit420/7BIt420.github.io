@@ -1,0 +1,54 @@
+@import url("colour-scheme.css");
+@import url("fonts.css");
+
+* {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto';
+}
+
+main {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+nav.expanded {
+    background: transparent;
+    display: flexbox;
+    width: 100vw;
+    height: 6vh;
+    margin-top: 3vh;
+}
+
+nav.minimised {
+    width: 10vh;
+    display: grid;
+}
+
+nav.expanded>* {
+    display: inline-block;
+    height: 5vh;
+    margin: .5vh .7vw;
+}
+
+nav.expanded>.icon {
+    min-width: 3vw;
+    background: black;
+}
+
+nav.expanded>a {
+    font-size: 5vh;
+    justify-content: center;
+    align-content: center;
+    vertical-align: middle;
+    text-align: justify;
+    float: right;
+}
+
+nav.expanded>a:first-of-type {
+    padding-right: 1vw;
+}

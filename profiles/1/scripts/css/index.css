@@ -1,0 +1,36 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+body {
+    background: gray;
+}
+
+body>section {
+    width: 100vw;
+    min-height: 80vh;
+    scroll-snap-align: start;
+}
+
+body>section::before {
+    width: 100vw;
+    content: url("../../assets/index/svgs/sand-before.svg");
+}
+
+body>section::after {
+    width: 100vw;
+    content: url("../../assets/index/svgs/sand-after.svg");
+}
+
+body>main {
+    width: 100vw;
+    min-height: 100vh;
+    scroll-snap-align: start;
+}
+
+body {
+    scroll-snap-type: proximity;
+}
