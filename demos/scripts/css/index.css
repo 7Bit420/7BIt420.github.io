@@ -1,6 +1,0 @@
-@import url('/scripts/css/base.css');
-@import url('/scripts/css/lists.css');
-
-#homepages>.list {
-    width: 30vw;
-}
