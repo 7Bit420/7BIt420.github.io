@@ -1,0 +1,21 @@
+{
+    "forename": "PATEL",
+    "date_of_birth": "1975/04/25",
+    "entity_id": "2022/69548",
+    "nationalities": [
+        "AU",
+        "IN"
+    ],
+    "name": "ANIL",
+    "_links": {
+        "self": {
+            "href": "https://ws-public.interpol.int/notices/v1/red/2022-69548" // Leads to notice.json
+        },
+        "images": {
+            "href": "https://ws-public.interpol.int/notices/v1/red/2022-69548/images" // Leads to images.json
+        },
+        "thumbnail": {
+            "href": "https://ws-public.interpol.int/notices/v1/red/2022-69548/images/62573333" // Thumbnail Image
+        }
+    }
+}

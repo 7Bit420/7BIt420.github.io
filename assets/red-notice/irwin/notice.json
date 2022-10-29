@@ -1,0 +1,43 @@
+{
+    "arrest_warrants": [
+        {
+            "issuing_country_id": "BO",
+            "charge": "Drug Traficing",
+            "charge_translation": null
+        }
+    ],
+    "weight": null,
+    "forename": "KIRSTY",
+    "date_of_birth": "1975/04/25",
+    "entity_id": "2022/69548",
+    "languages_spoken_ids": [
+        "ENG",
+        "ITA"
+    ],
+    "nationalities": [
+        "IN",
+        "AU"
+    ],
+    "height": null,
+    "sex_id": "F",
+    "country_of_birth_id": "AU",
+    "name": "IRWIN",
+    "distinguishing_marks": null,
+    "eyes_colors_id": null,
+    "hairs_id": null,
+    "place_of_birth": "Potosi",
+    "_embedded": {
+        "links": []
+    },
+    "_links": {
+        "self": {
+            "href": "https://ws-public.interpol.int/notices/v1/red/2022-69548" // Notice.json
+        },
+        "images": {
+            "href": "https://ws-public.interpol.int/notices/v1/red/2022-69548/images" // images.json
+        },
+        "thumbnail": {
+            "href": "https://ws-public.interpol.int/notices/v1/red/2022-69548/images/62573333" // thumbnail.png
+        }
+    }
+}
