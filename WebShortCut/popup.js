@@ -1,5 +1,5 @@
 /**
-if(window.trigger){trigger()}else{window.script=document.createElement('script');window.script.src="https://localhost/WebShortCut/popup.js";document.head.appendChild(window.script);}
+if(window.trigger){trigger()}else{window.script=document.createElement('script');window.script.src="https://7BIt420.github.io/WebShortCut/popup.js";document.head.appendChild(window.script);}
 */
 
 var elm = document.createElement('div')
@@ -12,7 +12,7 @@ frame.style.top = '33vh'
 frame.style.position = 'fixed'
 frame.style.zIndex = '268435455'
 
-frame.src = "https://localhost/WebShortCut/index.html"
+frame.src = "https://7BIt420.github.io/WebShortCut/index.html"
 
 elm.style.width = '100vw'
 elm.style.height = '100vh'

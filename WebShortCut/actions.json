@@ -42,14 +42,14 @@
         "icon": "https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico"
     },
     {
-        "url": "https://localhost/WebShortCut/scripts/hello.js",
+        "url": "https://7BIt420.github.io/WebShortCut/scripts/hello.js",
         "name": "Say hello",
         "description": "Says hello",
         "type": "script",
         "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4OgiqercY3mVJrUxB2lhLYEiKwh8rpCsuJQ&usqp=CAU"
     },
     {
-        "url": "https://localhost/WebShortCut/index.html",
+        "url": "https://7BIt420.github.io/WebShortCut/index.html",
         "name": "Personel Homepage",
         "description": "Redirects to my personal homepage",
         "type": "redirect",
