@@ -1,3 +1,5 @@
+// Replaces CONDORI AGUILA
+
 {
     "forename": "PATEL",
     "date_of_birth": "1975/04/25",
@@ -9,13 +11,13 @@
     "name": "ANIL",
     "_links": {
         "self": {
-            "href": "https://ws-public.interpol.int/notices/v1/red/2022-69548" // Leads to notice.json
+            "href": "https://ws-public.interpol.int/notices/v1/red/2022-69548"
         },
         "images": {
-            "href": "https://ws-public.interpol.int/notices/v1/red/2022-69548/images" // Leads to images.json
+            "href": "https://ws-public.interpol.int/notices/v1/red/2022-69548/images"
         },
         "thumbnail": {
-            "href": "https://ws-public.interpol.int/notices/v1/red/2022-69548/images/62573333" // Thumbnail Image
+            "href": "https://ws-public.interpol.int/notices/v1/red/2022-69548/images/62573333"
         }
     }
 }

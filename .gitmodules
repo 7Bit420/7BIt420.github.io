@@ -1,0 +1,3 @@
+[submodule "superstrings"]
+    path = "super-strings"
+	url = "http://github.com/7bit420/super-strings"
