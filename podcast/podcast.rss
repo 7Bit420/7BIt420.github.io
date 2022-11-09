@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+   <channel>
+      <title>Scotch On Air Eposodes</title>
+      <link>https://pages.7bit.dev/podcast/podcast</link>
+      <description>Scotch On Airs offical podcast feed</description>
+      <language>en-au</language>
+      <pubDate>Mon 17 Oct 2022 10:00:00 GMT+1100</pubDate>
+      <lastBuildDate>Mon 17 Oct 2022 10:00:00 GMT+1100</lastBuildDate>
+      <docs>https://www.rssboard.org/rss-specification</docs>
+      <generator>Hand Typed! :,)</generator>
+      <managingEditor>tk6129@scotchmel.vic.edu.au</managingEditor>
+      <webMaster>mb6087@scotchmel.vic.edu.au</webMaster>
+      <copyright>© 2022, Michael Bell</copyright>
+      <ttl>1</ttl>
+      <image>
+         <link>https://pages.7bit.dev/podcast/assets/logo.jpeg</link>
+         <title>Scotch On Air Logo</title>
+         <url>https://pages.7bit.dev/podcast/assets/logo.jpeg</url>
+         <description></description>
+         <height>1600</height>
+         <width>1600</width>
+      </image>
+      <item>
+         <title>Episode #27 - Phones in the classroom</title>
+         <link>https://pages.7bit.dev/podcast/episodes/27</link>
+         <description>We talk about phones in the classroom.</description>
+         <pubDate>Mon 07 Nov 2022 10:00:00 GMT+1100</pubDate>
+         <guid>https://pages.7bit.dev/podcast/episodes#27</guid>
+      </item>
+      <item>
+         <title>Episode #26 - Improved Classrooms</title>
+         <link>https://pages.7bit.dev/podcast/episodes/26</link>
+         <description>We Have a look at how maths could be taught better</description>
+         <pubDate>Mon 31 Oct 2022 10:00:00 GMT+1100</pubDate>
+         <guid>https://pages.7bit.dev/podcast/episodes#26</guid>
+      </item>
+      <item>
+         <title>Episode #25 - Podcast Review</title>
+         <link>https://pages.7bit.dev/podcast/episodes/25</link>
+         <description>We review Ms Hopkins podcast</description>
+         <pubDate>Mon 24 Oct 2022 10:00:00 GMT+1100</pubDate>
+         <guid>https://pages.7bit.dev/podcast/episodes#25</guid>
+      </item>
+      <item>
+         <title>Episode #24 - Dr Xu</title>
+         <link>https://pages.7bit.dev/podcast/episodes/24</link>
+         <description>We get a jucy interview with Dr Xu</description>
+         <pubDate>Mon 17 Oct 2022 10:00:00 GMT+1100</pubDate>
+         <guid>https://pages.7bit.dev/podcast/episodes#24</guid>
+      </item>
+   </channel>
+</rss>
