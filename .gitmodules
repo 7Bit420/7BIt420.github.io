@@ -1,3 +1,3 @@
 [submodule "super-strings"]
-	path = super-strings
+	path = games/super-strings
 	url = https://github.com/7Bit420/super-strings.git
