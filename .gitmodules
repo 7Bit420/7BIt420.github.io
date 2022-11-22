@@ -1,3 +1,7 @@
 [submodule "super-strings"]
 	path = games/super-strings
 	url = https://github.com/7Bit420/super-strings.git
+
+[submodule "minesweeper"]
+	path = games/minesweeper
+	url = https://github.com/7Bit420/minesweeper.git
