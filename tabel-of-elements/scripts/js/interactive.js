@@ -1,4 +1,4 @@
-import * as bridge from '/scripts/js/bridge.js'
+import * as bridge from 'scripts/js/bridge.js'
 
 (async () => {
     var evHandler = new bridge.parent()
