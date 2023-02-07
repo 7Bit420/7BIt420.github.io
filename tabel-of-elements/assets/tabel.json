@@ -31,7 +31,7 @@
                 "name": "Potassium",
                 "symbol": "K",
                 "group": 1,
-                "cat":"Alcline metals"
+                "cat": "Alcline metals"
             },
             {
                 "atn": 37,
@@ -199,7 +199,6 @@
             {
                 "transperent": true
             },
-            
             {
                 "atn": 22,
                 "name": "Titanium",
@@ -262,7 +261,6 @@
             {
                 "transperent": true
             },
-            
             {
                 "atn": 23,
                 "name": "Vanadium",
@@ -325,7 +323,6 @@
             {
                 "transperent": true
             },
-            
             {
                 "atn": 24,
                 "name": "Chromium",
@@ -388,7 +385,6 @@
             {
                 "transperent": true
             },
-            
             {
                 "atn": 25,
                 "name": "Manganese",
@@ -451,7 +447,6 @@
             {
                 "transperent": true
             },
-            
             {
                 "atn": 26,
                 "name": "Iron",
@@ -514,7 +509,6 @@
             {
                 "transperent": true
             },
-            
             {
                 "atn": 27,
                 "name": "Cobalt",
@@ -577,7 +571,6 @@
             {
                 "transperent": true
             },
-            
             {
                 "atn": 28,
                 "name": "Nickel",
@@ -640,7 +633,6 @@
             {
                 "transperent": true
             },
-            
             {
                 "atn": 29,
                 "name": "Copper",
@@ -703,7 +695,6 @@
             {
                 "transperent": true
             },
-            
             {
                 "atn": 30,
                 "name": "Zinc",
@@ -1169,6 +1160,39 @@
                 "name": "Rutherfordium",
                 "symbol": "Rf",
                 "group": 17
+            }
+        ]
+    },
+    {
+        "thin": false,
+        "elements": [
+            {
+                "thin": true
+            },
+            {
+                "thin": true
+            },
+            {
+                "thin": true
+            },
+            {
+                "thin": true
+            },
+            {
+                "thin": true
+            },
+            {
+                "thin": true
+            },
+            {
+                "thin": true
+            },
+            {
+                "atn": 420,
+                "name": "Suprise",
+                "symbol": "Su",
+                "group": 18,
+                "cat": "Unknown"
             }
         ]
     }
