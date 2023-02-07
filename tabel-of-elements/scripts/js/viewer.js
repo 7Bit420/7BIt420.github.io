@@ -61,10 +61,10 @@ import * as bridge from './bridge.js'
         for (const i in statElms) {
             statElms[i].innerText = info[atn]?.[i] ?? 'Unknown'
         }
-        otherElms.name.innerText = info[atn].name
-        otherElms.icon.style.background = colourMap[info[atn].cat]
-        otherElms.description.innerText = descriptions[atn].description
-        otherElms.shells.innerText = info[atn].shells.join(', ')
+        otherElms.name.innerText = info[atn].name ?? 'Unknown'
+        otherElms.icon.style.background = colourMap[info[atn].cat] ?? ''
+        otherElms.description.innerText = descriptions[atn].description ?? 'No description'
+        otherElms.shells.innerText = info[atn].shells.join(', ') ?? 'No shell data'
         if (model) {
             updateModel(atn)
         }
