@@ -1,0 +1,106 @@
+@import url('/scripts/css/base.css');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+body {
+    margin: calc(var(--elm-size) / 2);
+    --elm-margin: 3px;
+    overflow: hidden;
+}
+
+main {
+    width: calc(100vw - var(--margin));
+    height: calc(100vh - var(--margin));
+    background: transparent;
+    display: block;
+}
+
+.element {
+    position: absolute;
+    background: var(--background-2);
+    width: var(--elm-size);
+    height: var(--elm-size);
+    border-radius: 5px;
+    margin: var(--elm-margin);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: calc(var(--elm-size) * 0.2) calc(var(--elm-size) * 0.6) calc(var(--elm-size) * 0.2);
+    top: calc(var(--elm-margin) + ((var(--row) - 0.85) * (var(--elm-size) + (var(--elm-margin) * 2))));
+    left: calc(var(--elm-margin) + ((var(--coloum) - 0.85) * (var(--elm-size) + (var(--elm-margin) * 2))));
+}
+
+.element.thin {
+    height: calc(var(--elm-size) / 2);
+    opacity: 0%;
+}
+
+.element.transperent {
+    opacity: 0%;
+}
+
+.group {
+    overflow: visible;
+    width: calc(var(--elm-size) + (var(--elm-margin) * 2));
+    background: transparent;
+}
+
+#tabel {
+    overflow: visible;
+}
+
+#tabel * {
+    align-content: flex-end;
+}
+
+.element:hover {
+    z-index: 2;
+    scale: 1.5;
+}
+
+.element>* {
+    display: block;
+    background: transparent;
+}
+
+.element>.name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 0px calc(var(--elm-size) * 0.1);
+    width: calc(var(--elm-size) * 0.6);
+    height: calc(var(--elm-size) * 0.2);
+    font-size: calc(var(--elm-size) * 0.15);
+    grid-row: 3 / 3;
+    grid-column: 1 / 2;
+}
+
+.element>.symbol {
+    width: calc(var(--elm-size) * 0.6);
+    height: calc(var(--elm-size) * 0.4);
+    padding: calc(var(--elm-size) * 0.1);
+    font-size: calc(var(--elm-size) * 0.35);
+    float: left;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.element>.info {
+    padding: 0px calc(var(--elm-size) * 0.1);
+    width: calc(var(--elm-size) * 0.6);
+    height: calc(var(--elm-size) * 0.2);
+    font-size: calc(var(--elm-size) * 0.15);
+    float: left;
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+}
+
+.element>.shell {
+    width: calc(var(--elm-size) * 0.2);
+    height: calc(var(--elm-size) * 1);
+    float: right;
+    grid-column: 2 / 2;
+    font-size: calc(var(--elm-size) * 0.12);
+}

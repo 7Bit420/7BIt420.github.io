@@ -1,0 +1,14 @@
+table>tr>td {
+    width: 2vw;
+    height: 2vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+table>tr:nth-child(odd)>td:nth-child(even), table>tr:nth-child(even)>td:nth-child(odd) {
+    background: green;
+}
+
+table>tr:nth-child(even)>td:nth-child(even), table>tr:nth-child(odd)>td:nth-child(odd) {
+    background: yellowgreen;
+}
