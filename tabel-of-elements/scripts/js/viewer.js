@@ -63,8 +63,13 @@ import * as bridge from './bridge.js'
         }
         otherElms.name.innerText = info[atn].name ?? 'Unknown'
         otherElms.icon.style.background = colourMap[info[atn].cat] ?? ''
+<<<<<<< HEAD
         otherElms.description.innerText = descriptions[atn].description ?? 'No description'
         otherElms.shells.innerText = info[atn].shells.join(', ') ?? 'No shell data'
+=======
+        otherElms.description.innerText = descriptions[atn].description ?? 'Unknown'
+        otherElms.shells.innerText = info[atn].shells.join(', ') ?? 'No Shell Data'
+>>>>>>> a8408c7 (Update)
         if (model) {
             updateModel(atn)
         }

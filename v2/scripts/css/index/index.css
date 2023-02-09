@@ -1,0 +1,21 @@
+@import url("../base/base.css");
+
+.section {
+    padding: 2vh 2vw;
+    height: 96vh;
+    width: 96vw;
+    max-width: 96vw;
+}
+
+.section.main {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+}
+
+section.background {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+}
