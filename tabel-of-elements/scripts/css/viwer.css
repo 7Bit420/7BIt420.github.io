@@ -1,8 +1,11 @@
 @import url('/scripts/css/base.css');
 
+* {
+    background: var(--background-2);
+}
+
 body {
     --ratio: 2;
-    background: var(--background-2);
 }
 
 main {
@@ -21,7 +24,6 @@ model-viewer {
 #icon {
     display: grid;
     float: left;
-    background: #623842;
     width: var(--elm-size);
     height: var(--elm-size);
     border-radius: 10px;
