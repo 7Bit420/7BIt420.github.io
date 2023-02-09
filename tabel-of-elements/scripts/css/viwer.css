@@ -1,7 +1,7 @@
 @import url('/scripts/css/base.css');
 
 * {
-    background: var(--background-2);
+    background: var(--background-1);
 }
 
 body {
@@ -22,6 +22,7 @@ model-viewer {
 }
 
 #icon {
+    background: var(--background-2);
     display: grid;
     float: left;
     width: var(--elm-size);
