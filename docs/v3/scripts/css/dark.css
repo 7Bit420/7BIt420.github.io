@@ -1,0 +1,9 @@
+* {
+    --background-primary: rgb(20, 21, 31);
+    --background-secondary: rgb(32, 31, 48);
+    
+    --text-primary: rgb(0,0,0);
+    --text-secondary: rgb(0,0,0);
+
+    --acent: rgb(0,0,0);
+}

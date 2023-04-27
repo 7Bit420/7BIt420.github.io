@@ -1,0 +1,10 @@
+nav {
+    position: fixed;
+    padding: 1vw 1vh;
+    width: 40vw;
+    height: 5vh;
+    background: var(--background-secondary);
+    top: 2vh;
+    left: 2vh;
+    border-radius: 10px;
+}

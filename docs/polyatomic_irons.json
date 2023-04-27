@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Hydroxide",
+        "formula": "OH",
+        "charge": -1
+    },
+    {
+        "name": "Nitrate",
+        "formula": "NO₃",
+        "charge": -1
+    },
+    {
+        "name": "Nitrite",
+        "formula": "NO₂",
+        "charge": -1
+    },
+    {
+        "name": "Carbonate",
+        "formula": "CO₃",
+        "charge": -2
+    },
+    {
+        "name": "Sulphite",
+        "formula": "SO₃",
+        "charge": -2
+    },
+    {
+        "name": "Sulfate",
+        "formula": "SO₄",
+        "charge": -2
+    },
+    {
+        "name": "Phosphate",
+        "formula": "PO₄",
+        "charge": -3
+    },
+    {
+        "name": "Cyanide",
+        "formula": "CN",
+        "charge": -1
+    },
+    {
+        "name": "Ammonium",
+        "formula": "NH₄",
+        "charge": 1
+    }
+]

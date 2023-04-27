@@ -1,0 +1,14 @@
+{
+  "name": "7bit.dev-v3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Bell",
+  "license": "MIT",
+  "dependencies": {
+    "xterm": "^5.1.0"
+  }
+}

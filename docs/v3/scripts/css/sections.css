@@ -1,0 +1,180 @@
+/*#endregion*/
+/* 
+*/
+/*#region*/
+
+/* Main */
+/*#region*/
+section.main {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+/*#endregion*/
+/* Asset-Text
+An asset on the left and a pice of text with a title on the right
+*/
+/*#region*/
+section.asset-text {
+    min-width: 90vw;
+    height: 90vh;
+    padding: 5vh 5vw;
+    display: grid;
+    grid-template-columns: 40vw 10vw 40vw;
+    grid-template-rows: 10vh 1fr;
+}
+
+section.asset-text>img,
+section.asset-text>video,
+section.asset-text>image,
+section.asset-text>audio,
+section.asset-text>iframe {
+    grid-column: 1;
+    grid-row: 1/3;
+    width: 40vw;
+    margin: auto 0;
+}
+
+section.asset-text>p {
+    grid-column: 3;
+    grid-row: 2;
+    width: 40vw;
+}
+
+section.asset-text>h1,
+section.asset-text>h2,
+section.asset-text>h3,
+section.asset-text>h4,
+section.asset-text>h5,
+section.asset-text>h6 {
+    grid-column: 3;
+    grid-row: 1;
+    width: 40vw;
+}
+
+/*#endregion*/
+/* Text-Asset
+An asset on the right and a pice of text with a title on the left
+*/
+/*#region*/
+section.text-asset {
+    min-width: 90vw;
+    height: 90vh;
+    padding: 5vh 5vw;
+    display: grid;
+    grid-template-columns: 40vw 10vw 40vw;
+    grid-template-rows: 10vh 1fr;
+}
+
+section.text-asset>img,
+section.text-asset>video,
+section.text-asset>image,
+section.text-asset>audio,
+section.asset-text>iframe {
+    grid-column: 3;
+    grid-row: 1/3;
+    width: 40vw;
+    margin: auto 0;
+}
+
+section.text-asset>p {
+    grid-column: 1;
+    grid-row: 2;
+    width: 40vw;
+}
+
+section.text-asset>h1,
+section.text-asset>h2,
+section.text-asset>h3,
+section.text-asset>h4,
+section.text-asset>h5,
+section.text-asset>h6 {
+    grid-column: 1;
+    grid-row: 1;
+    width: 40vw;
+}
+
+/*#endregion*/
+/* Quote
+*/
+/*#region*/
+section.quote {
+    min-width: 90vw;
+    height: 90vh;
+    padding: 5vh 5vw;
+    display: table;
+    text-align: center;
+}
+
+section.quote>h1 {
+    font-size: 10vh;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+section.quote>h1::before {
+    content: "\201C";
+}
+
+section.quote>h1::after {
+    content: "\201D";
+}
+
+/*#endregion*/
+/* Form
+*/
+/*#region*/
+
+section.form {
+    min-width: 90vw;
+    height: 90vh;
+    padding: 5vh 5vw;
+    display: grid;
+    grid-template-columns: 40vw 10vw 20vw 20vw;
+}
+
+section.form>h1,
+section.form>p {
+    grid-column: 1;
+}
+
+section.form>input,
+section.form>button {
+    grid-column: 3;
+}
+
+/*#endregion*/
+/* Carosel
+*/
+/*#region*/
+section.carosel {
+    min-width: 90vw;
+    height: 90vh;
+    padding: 5vh 5vw;
+    display: grid;
+    grid-template-columns: 15vw 5vw 50vw 5vw 15vw;
+    grid-template-rows: 20vh 50vh 5vh 15vh;
+}
+
+section.carosel>div.options  {
+    grid-column: 3;
+    grid-row: 2;
+    height: 50vh;
+    width: 50vw;
+    display: block;
+    white-space: nowrap;
+    overflow: scroll hidden;
+    scroll-snap-type: x mandatory;
+
+}
+
+section.carosel>div.options>li {
+    background: linear-gradient(45deg, red, blue);
+    width: 50vw;
+    height: 100%;
+    display: inline-block;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: start;
+}

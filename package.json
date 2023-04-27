@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@types/node": "^18.15.10",
+    "xterm": "^5.1.0"
+  }
+}
