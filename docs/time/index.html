@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Time</title>
+
+    <script src="scripts/js/index.js"></script>
+
+    <link rel="stylesheet" href="scripts/css/index.css">
+</head>
+<body>
+    <dialog id="configModal">
+        <h1>Config</h1>
+        <form>
+            <label for="t">Set Countdown Date</label>
+            <input type="datetime-local" name="t">
+            <div></div>
+            <button type="submit">Apply</button>
+            <button type="reset">Cancel</button>
+        </form>
+    </dialog>
+    <div class="wraper">
+        <p id="date">T+</p>
+    </div>
+</body>
+</html>

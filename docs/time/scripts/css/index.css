@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+* {
+  --background-primary: rgb(54, 69, 79);
+  --background-secondary: rgb(83,104,120);
+  --border-primary:rgb(41, 51, 58);
+  --text-colour: white;
+  --char-width: 30px;
+  --char-height: 70px;
+}
+
+body,
+html {
+  background-color: var(--background-primary);
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: white;
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--char-height);
+}
+
+.wraper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-auto-flow: column dense;
+  grid-auto-rows: 0.5fr var(--char-height) 0.5fr;
+  grid-auto-columns: 1fr;
+  text-align: center;
+}
+
+p {
+  grid-row: 2;
+  display: block;
+  margin: 0;
+}
+
+#date {
+  grid-column: 1;
+}
+
+dialog {
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px var(--border-primary) solid;
+    background-color: var(--background-secondary);
+}
+
+dialog > h1 {
+    font-size: 20pt;
+    margin-bottom: 5px;
+}
+
+dialog > form {
+    height: min-content;
+}
+
+dialog > form > label {
+    font-size: 12pt;
+    margin-top: 2px;
+}
+
